@@ -52,10 +52,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Video_service.wsgi.application'
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'video_db',
+        'USER': 'user_video_db',
+        'PASSWORD': 'mypassword',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
