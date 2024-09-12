@@ -59,7 +59,7 @@ DATABASES = {
         'NAME': 'video_db',
         'USER': 'user_video_db',
         'PASSWORD': 'mypassword',
-        'HOST': 'localhost',
+        'HOST': 'video_db',
         'PORT': '5432',
     }
 }
